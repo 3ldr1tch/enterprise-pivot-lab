@@ -1,0 +1,21 @@
+[Unit]
+Description=OpsCheck Infrastructure Diagnostics
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=opscheck
+Group=opscheck
+WorkingDirectory=/opt/opscheck
+
+ExecStart=/opt/opscheck/venv/bin/gunicorn --workers 2 --bind 0.0.0.0:8080 app:app
+
+Restart=on-failure
+RestartSec=3
+
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
