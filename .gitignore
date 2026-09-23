@@ -1,0 +1,24 @@
+# Virtual machines
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.sav
+
+# ISOs
+*.iso
+
+# VirtualBox
+*.vbox-prev
+*.log
+
+# Ligolo runtime/config
+ligolo-ng.yaml
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+*~
