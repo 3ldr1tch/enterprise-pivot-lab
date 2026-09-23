@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}OpsCheck Dashboard{% endblock %}
+
+{% block content %}
+
+<div class="panel">
+    <h2>Infrastructure Status</h2>
+
+    <p class="status">● Monitoring service operational</p>
+
+    <p>
+        Node: {{ hostname }}
+    </p>
+
+    <p>
+        Use the diagnostics console to verify connectivity
+        to infrastructure endpoints.
+    </p>
+</div>
+
+<div class="panel">
+    <h3>Services</h3>
+
+    <pre>
+HTTP Monitor       ONLINE
+DNS Resolver       ONLINE
+Network Probe      ONLINE
+Replication API    ONLINE
+    </pre>
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Network Diagnostics{% endblock %}
+
+{% block content %}
+
+<div class="panel">
+
+<h2>Network Diagnostics</h2>
+
+<p>
+Verify connectivity to an IPv4 address or hostname.
+</p>
+
+<form method="POST">
+
+<input
+    name="target"
+    placeholder="10.10.10.1"
+    value="{{ target }}"
+    autocomplete="off"
+>
+
+<button type="submit">Run Probe</button>
+
+</form>
+
+</div>
+
+{% if result %}
+
+<div class="panel">
+
+<h3>Probe Result</h3>
+
+<pre>{{ result }}</pre>
+
+</div>
+
+{% endif %}
+
+{% endblock %}
