@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f1f3f5;
+    color: #252a30;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: #18232d;
+    color: white;
+    padding: 22px 8%;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    margin-top: 4px;
+    color: #aebbc5;
+    font-size: 13px;
+}
+
+nav {
+    margin-top: 22px;
+}
+
+nav a {
+    color: #d8e0e5;
+    margin-right: 24px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+.hero {
+    margin-bottom: 35px;
+}
+
+.hero h1 {
+    margin-bottom: 5px;
+}
+
+.hero p {
+    color: #67717a;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #d8dde1;
+    padding: 24px;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.date {
+    color: #89939b;
+    font-size: 12px;
+}
+
+.system-info {
+    margin-top: 35px;
+    padding: 15px;
+    background: #e4e8eb;
+    font-family: monospace;
+}
+
+button,
+input[type="file"] {
+    margin-top: 10px;
+}
+
+button {
+    padding: 9px 16px;
+    border: 1px solid #69747c;
+    background: #263746;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 25px;
+    text-align: center;
+    color: #7a838a;
+    font-size: 12px;
+}
